@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+tiempo = ['12:08:20', '12:08:26', '12:08:32', '12:08:38', '12:08:44', '12:08:50', '12:08:56']
+cpu = [93, 93, 96, 95, 100, 100, 95]
+memoria = [19.66, 19.52, 19.49, 19.54, 19.52, 19.50, 19.47]
+
+plt.figure(figsize=(10,5))
+
+plt.plot(tiempo, cpu, marker='o', label='Uso de CPU')
+
+plt.plot(tiempo, memoria, marker='o', color='red', label='Uso de Memoria')
+
+plt.title('Uso de CPU y Memoria a lo largo del tiempo')
+plt.xlabel('Tiempo')
+plt.ylabel('Porcentaje de uso (%)')
+plt.legend()
+
+plt.show()

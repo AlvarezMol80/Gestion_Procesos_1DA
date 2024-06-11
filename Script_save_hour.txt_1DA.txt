@@ -1,0 +1,5 @@
+while true
+do
+    date >> save_hour.txt
+sleep 5
+done &
